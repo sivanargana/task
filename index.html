@@ -27,7 +27,7 @@
 <body>
   <div
     class="tw-bg-[#F7F7FA] md:tw-pl-[240px] tw-pt-[60px] tw-min-h-screen tw-flex tw-flex-col tw-transition-all tw-duration-300 tw-ease-out [&:has([data-layout='sidebar'].open)]:tw-pl-0">
-    <div class="tw-fixed tw-left-0 tw-top-[60px] tw-bottom-0 tw-bg-white tw-w-[240px] tw-transition-all tw-duration-300 tw-ease-out 
+    <div class="tw-fixed tw-z-[999] tw-left-0 tw-top-[60px] tw-bottom-0 tw-bg-white tw-w-[240px] tw-transition-all tw-duration-300 tw-ease-out 
     -tw-translate-x-full 
     [&.open]:-tw-translate-x-0
      md:-tw-translate-x-0 
@@ -108,7 +108,7 @@
       </div>
       <div class="tw-flex-none tw-hidden md:tw-flex">
         <label
-          class="tw-w-[300px] tw-max-w-full tw-flex tw-items-center tw-rounded-[5px] tw-border tw-border-solid tw-border-[#D7D9DE] tw-bg-[#F5F5F5] tw-px-[10px]">
+          class="tw-w-[300px]  [&:has(input:focus)]:tw-w-[400px] [&:has(input:focus)]:tw-bg-gray-200/80 tw-transition-all tw-duration-300 tw-ease-out tw-max-w-full tw-flex tw-items-center tw-rounded-[5px] tw-border tw-border-solid tw-border-[#D7D9DE] tw-bg-[#F5F5F5] tw-px-[10px]">
           <i class="fa fa-magnifying-glass tw-text-[#ACACAC]"></i>
           <input type="text"
             class="form-control !tw-border-none !tw-shadow-none !tw-bg-transparent tw-text-[#ACACAC] placeholder:tw-text-[#ACACAC]"

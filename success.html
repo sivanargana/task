@@ -27,7 +27,7 @@
 <body>
     <div
         class="tw-bg-[#F7F7FA] md:tw-pl-[240px] tw-pt-[60px] tw-min-h-screen tw-flex tw-flex-col tw-transition-all tw-duration-300 tw-ease-out [&:has([data-layout='sidebar'].open)]:tw-pl-0">
-        <div class="tw-fixed tw-left-0 tw-top-[60px] tw-bottom-0 tw-bg-white tw-w-[240px] tw-transition-all tw-duration-300 tw-ease-out 
+        <div class="tw-fixed tw-z-[999] tw-left-0 tw-top-[60px] tw-bottom-0 tw-bg-white tw-w-[240px] tw-transition-all tw-duration-300 tw-ease-out 
     -tw-translate-x-full 
     [&.open]:-tw-translate-x-0
      md:-tw-translate-x-0 
@@ -109,7 +109,7 @@
             </div>
             <div class="tw-flex-none tw-hidden md:tw-flex">
                 <label
-                    class="tw-w-[300px] tw-max-w-full tw-flex tw-items-center tw-rounded-[5px] tw-border tw-border-solid tw-border-[#D7D9DE] tw-bg-[#F5F5F5] tw-px-[10px]">
+                    class="tw-w-[300px] [&:has(input:focus)]:tw-w-[400px] [&:has(input:focus)]:tw-bg-gray-200/80 tw-transition-all tw-duration-300 tw-ease-out tw-max-w-full tw-flex tw-items-center tw-rounded-[5px] tw-border tw-border-solid tw-border-[#D7D9DE] tw-bg-[#F5F5F5] tw-px-[10px]">
                     <i class="fa fa-magnifying-glass tw-text-[#ACACAC]"></i>
                     <input type="text"
                         class="form-control !tw-border-none !tw-shadow-none !tw-bg-transparent tw-text-[#ACACAC] placeholder:tw-text-[#ACACAC]"
@@ -146,7 +146,7 @@
                         <h3 class="tw-text-[28px] tw-font-bold tw-text-[#FF6800] tw-m-0">Congratulations!</h3>
                     </div>
                     <div class="tw-flex-auto tw-flex tw-flex-col tw-items-center tw-justify-center tw-p-[20px]">
-                        <img src="success.gif" class="tw-w-[500px] tw-max-w-full tw-mix-blend-multiply -tw-my-[50px]" />
+                        <img src="success.gif" class="tw-w-[500px] tw-max-w-full tw-mix-blend-multiply -tw-my-[50px] tw-relative tw-z-[1]" />
                         <div class="tw-text-[20px] tw-font-normal tw-text-center">We know it was hard but you have
                             successfully <br />completed xxx days challenge.</div>
                     </div>
@@ -154,7 +154,7 @@
                 <div
                     class="tw-flex tw-flex-col tw-p-[20px] tw-flex tw-flex-col tw-items-center tw-justify-center tw-gap-[30px]">
                     <img src="certificate.png" class="tw-w-[500px] tw-max-w-full" />
-                    <a class="btn btn-lg btn-primary" href="#">Download Your Cartificate</a>
+                    <a class="btn btn-lg btn-primary" href="#"><i class="fa fa-download"></i> Download Your Cartificate</a>
                 </div>
             </div>
         </div>
