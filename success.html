@@ -20,6 +20,13 @@
             prefix: 'tw-',
             corePlugins: {
                 preflight: false,
+            },
+            theme: {
+                extend:{
+                    colors:{
+                        "primary":"var(--primary)"
+                    }
+                }
             }
         }
     </script>
@@ -51,6 +58,16 @@
         [&_ul>li>a]:tw-h-[50px]
         [&_ul>li>a]:tw-cursor-pointer
         [&_ul>li:hover>a]:tw-bg-gray-100
+        [&_ul>li>a]:tw-relative
+        [&_ul>li>a:before]:tw-content-['']
+        [&_ul>li>a:before]:tw-absolute
+        [&_ul>li>a:before]:tw-left-0
+        [&_ul>li>a:before]:tw-top-0
+        [&_ul>li>a:before]:tw-w-[4px]
+        [&_ul>li>a:before]:tw-h-full
+        [&_ul>li>a:before]:tw-bg-primary
+        [&_ul>li>a:before]:tw-rounded-r-full
+        [&_ul>li>a:before]:tw-hidden
         [&_ul>li>a]:tw-no-underline	
         [&_ul>li>a]:tw-items-center
         [&_ul>li>a]:tw-px-[20px]
@@ -66,7 +83,8 @@
         [&_ul>li>a[data-bs-toggle='collapse']:after]:tw-font-bold
         [&_ul>li>a[data-bs-toggle='collapse']:after]:tw-font-['Font_Awesome_6_Free']
         [&_ul>li>ul]:tw-pl-[39px]
-        [&_ul>li.active>a]:!tw-text-blue-500
+        [&_ul>li.active>a]:!tw-text-primary
+        [&_ul>li.active>a:before]:!tw-block
         " data-menu="group">
                 <ul>
                     <li><a href=""><i class="fa fa-chart-simple"></i>Dashboard</a></li>
@@ -105,7 +123,7 @@
             class="tw-fixed tw-left-0 tw-top-0 tw-right-0 tw-h-[60px] tw-bg-white tw-flex tw-items-center tw-gap-[20px]">
             <div class="tw-flex-none tw-flex tw-items-center tw-gap-[10px] tw-px-[20px] md:tw-w-[240px]">
                 <button type="button" class="btn btn-dark" data-layout="toggle"><i class="fa fa-bars"></i></button>
-                <div class="tw-text-[20px] tw-font-bold"><span class="tw-text-[#FB993E]">BRAIN</span>WIZ</div>
+                <div class="tw-text-[20px] tw-font-bold"><span class="tw-text-primary">BRAIN</span>WIZ</div>
             </div>
             <div class="tw-flex-none tw-hidden md:tw-flex">
                 <label
@@ -143,7 +161,7 @@
                                 <li class="breadcrumb-item active" aria-current="page">Certifications</li>
                             </ol>
                         </nav>
-                        <h3 class="tw-text-[28px] tw-font-bold tw-text-[#FF6800] tw-m-0">Congratulations!</h3>
+                        <h3 class="tw-text-[28px] tw-font-bold tw-text-primary tw-m-0">Congratulations!</h3>
                     </div>
                     <div class="tw-flex-auto tw-flex tw-flex-col tw-items-center tw-justify-center tw-p-[20px]">
                         <img src="success.gif" class="tw-w-[500px] tw-max-w-full tw-mix-blend-multiply -tw-my-[50px] tw-relative tw-z-[1]" />

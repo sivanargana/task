@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,10 +21,18 @@
       prefix: 'tw-',
       corePlugins: {
         preflight: false,
+      },
+      theme: {
+        extend: {
+          colors: {
+            "primary": "var(--primary)"
+          }
+        }
       }
     }
   </script>
 </head>
+
 <body>
   <div
     class="tw-bg-[#F7F7FA] md:tw-pl-[240px] tw-pt-[60px] tw-min-h-screen tw-flex tw-flex-col tw-transition-all tw-duration-300 tw-ease-out [&:has([data-layout='sidebar'].open)]:tw-pl-0">
@@ -55,6 +64,16 @@
         [&_ul>li>a]:tw-items-center
         [&_ul>li>a]:tw-px-[20px]
         [&_ul>li>a]:!tw-text-[#6F6F6F]
+        [&_ul>li>a]:tw-relative
+        [&_ul>li>a:before]:tw-content-['']
+        [&_ul>li>a:before]:tw-absolute
+        [&_ul>li>a:before]:tw-left-0
+        [&_ul>li>a:before]:tw-top-0
+        [&_ul>li>a:before]:tw-w-[4px]
+        [&_ul>li>a:before]:tw-h-full
+        [&_ul>li>a:before]:tw-bg-primary
+        [&_ul>li>a:before]:tw-rounded-r-full
+        [&_ul>li>a:before]:tw-hidden
         [&_ul>li>a>i]:tw-size-[24px]
         [&_ul>li>a>i]:tw-flex
         [&_ul>li>a>i]:tw-items-center
@@ -66,7 +85,8 @@
         [&_ul>li>a[data-bs-toggle='collapse']:after]:tw-font-bold
         [&_ul>li>a[data-bs-toggle='collapse']:after]:tw-font-['Font_Awesome_6_Free']
         [&_ul>li>ul]:tw-pl-[39px]
-        [&_ul>li.active>a]:!tw-text-blue-500
+        [&_ul>li.active>a]:!tw-text-primary
+        [&_ul>li.active>a:before]:!tw-block
         " data-menu="group">
         <ul>
           <li><a href=""><i class="fa fa-chart-simple"></i>Dashboard</a></li>
@@ -104,7 +124,7 @@
     <div class="tw-fixed tw-left-0 tw-top-0 tw-right-0 tw-h-[60px] tw-bg-white tw-flex tw-items-center tw-gap-[20px]">
       <div class="tw-flex-none tw-flex tw-items-center tw-gap-[10px] tw-px-[20px] md:tw-w-[240px]">
         <button type="button" class="btn btn-dark" data-layout="toggle"><i class="fa fa-bars"></i></button>
-        <div class="tw-text-[20px] tw-font-bold"><span class="tw-text-[#FB993E]">BRAIN</span>WIZ</div>
+        <div class="tw-text-[20px] tw-font-bold"><span class="tw-text-primary">BRAIN</span>WIZ</div>
       </div>
       <div class="tw-flex-none tw-hidden md:tw-flex">
         <label
@@ -143,7 +163,8 @@
         <div class="tw-flex-auto tw-flex tw-flex-col tw-items-center tw-justify-center tw-gap-[10px] ">
           <img src="progress.png" class="tw-w-[500px] tw-max-w-full" />
           <div class="tw-text-[16px] tw-font-bold tw-text-center">You are almost there to earn your certificate,
-            <br />complete the course...</div>
+            <br />complete the course...
+          </div>
         </div>
       </div>
     </div>
@@ -153,4 +174,5 @@
     crossorigin="anonymous"></script>
   <script src="scripts.js"></script>
 </body>
+
 </html>

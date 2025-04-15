@@ -59,6 +59,16 @@
         [&_ul>li>a]:tw-h-[50px]
         [&_ul>li>a]:tw-cursor-pointer
         [&_ul>li:hover>a]:tw-bg-gray-100
+        [&_ul>li>a]:tw-relative
+        [&_ul>li>a:before]:tw-content-['']
+        [&_ul>li>a:before]:tw-absolute
+        [&_ul>li>a:before]:tw-left-0
+        [&_ul>li>a:before]:tw-top-0
+        [&_ul>li>a:before]:tw-w-[4px]
+        [&_ul>li>a:before]:tw-h-full
+        [&_ul>li>a:before]:tw-bg-primary
+        [&_ul>li>a:before]:tw-rounded-r-full
+        [&_ul>li>a:before]:tw-hidden
         [&_ul>li>a]:tw-no-underline	
         [&_ul>li>a]:tw-items-center
         [&_ul>li>a]:tw-px-[20px]
@@ -74,7 +84,8 @@
         [&_ul>li>a[data-bs-toggle='collapse']:after]:tw-font-bold
         [&_ul>li>a[data-bs-toggle='collapse']:after]:tw-font-['Font_Awesome_6_Free']
         [&_ul>li>ul]:tw-pl-[39px]
-        [&_ul>li.active>a]:!tw-text-blue-500
+        [&_ul>li.active>a]:!tw-text-primary
+        [&_ul>li.active>a:before]:!tw-block
         " data-menu="group">
                 <ul>
                     <li><a href=""><i class="fa fa-chart-simple"></i>Dashboard</a></li>
@@ -113,7 +124,7 @@
             class="tw-fixed tw-left-0 tw-top-0 tw-right-0 tw-h-[60px] tw-bg-white tw-flex tw-items-center tw-gap-[20px]">
             <div class="tw-flex-none tw-flex tw-items-center tw-gap-[10px] tw-px-[20px] md:tw-w-[240px]">
                 <button type="button" class="btn btn-dark" data-layout="toggle"><i class="fa fa-bars"></i></button>
-                <div class="tw-text-[20px] tw-font-bold"><span class="tw-text-[#FB993E]">BRAIN</span>WIZ</div>
+                <div class="tw-text-[20px] tw-font-bold"><span class="tw-text-primary">BRAIN</span>WIZ</div>
             </div>
             <div class="tw-flex-none tw-hidden md:tw-flex">
                 <label
@@ -141,28 +152,28 @@
             </div>
         </div>
         <div class="tw-flex-auto tw-flex tw-flex-col tw-border-[0px] tw-border-t tw-border-solid tw-border-[#F1F1F2]">
-            <div class="tw-flex-auto tw-grid tw-grd-cols-1 md:tw-grid-cols-2 tw-p-[30px] tw-gap-[30px]">
+            <div class="tw-flex-auto tw-grid tw-grd-cols-1 md:tw-grid-cols-2 tw-p-[20px] md:tw-p-[30px] tw-gap-[20px] md:tw-gap-[30px]">
                 <div class="tw-flex tw-flex-col">
                    <div class="tw-shadow-md tw-bg-white tw-p-[20px] tw-rounded-[10px] tw-flex tw-flex-col tw-items-center tw-gap-[20px]">
                     <div class="tw-text-[50px] tw-font-bold tw-leading-tight">Show your <span class="tw-text-primary">QR code</span> to your college representative</div>
-                    <div class="tw-shadow-md tw-bg-gray-100 tw-py-[20px] tw-px-[50px] tw-rounded-[10px] tw-flex tw-flex-col tw-items-center tw-justify-center tw-gap-[10px]">
-                        <div class="tw-flex tw-flex-col tw-items-center tw-justify-center tw-gap-[10px]">
+                    <div class="tw-shadow-md tw-bg-gray-100 tw-py-[20px] tw-px-[50px] tw-rounded-[10px] tw-flex tw-flex-col tw-items-center tw-justify-center tw-gap-[20px]">
+                        <div class="tw-flex tw-flex-col tw-items-center tw-justify-center tw-gap-[5px]">
                             <div
                                 class="tw-size-[40px] tw-bg-red-500 tw-rounded-full tw-bg-cover tw-bg-center tw-bg-[url(https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)]">
                             </div>
                             <div class="tw-text-[20px] tw-font-bold">Kushi Shroff</div>
                         </div>
-                        <img src="https://pngimg.com/uploads/qr_code/qr_code_PNG10.png" class="tw-w-[300px] tw-max-w-full" />
+                        <img src="https://pngimg.com/uploads/qr_code/qr_code_PNG10.png" class="tw-w-[300px] tw-max-w-full tw-p-[10px] tw-bg-white tw-shadow tw-rounded-[5px]" />
                         <a class="btn btn-lg btn-primary" href="#"><i class="fa fa-download"></i> Download</a>
                     </div>
                     
                    </div>
                 </div>
-                <div class="tw-flex tw-flex-col tw-gap-[30px]">
+                <div class="tw-flex tw-flex-col tw-gap-[20px] md:tw-gap-[30px]">
                     <div class="tw-shadow-md tw-bg-white tw-p-[20px] tw-rounded-[10px]">
                        <div class="tw-flex tw-items-center tw-flex-gap-[20px] tw-pb-[10px] tw-justify-between tw-border-[0px] tw-border-b tw-border-solid tw-border-[#F1F1F2]">
                         <div class="tw-text-[30px] tw-font-semibold">Your CRT Attendance</div>
-                        <button type="button" class="btn btn-light btn-icon !tw-bg-gray-200 !tw-size-[50px]"><i class="fa fa-users"></i></button>
+                        <button type="button" class="btn btn-light btn-icon !tw-bg-gray-200 !tw-size-[50px]"><i class="fa fa-user-group tw-text-primary"></i></button>
                        </div>
                         <div class="tw-text-[60px] tw-font-bold tw-text-primary">92%</div>
                         <div class="tw-text-base">Note: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem eum reprehenderit non explicabo dolorem id ipsum consectetur, Unde aspernatur quisquam debitis.</div>
@@ -170,7 +181,7 @@
                     <div class="tw-shadow-md tw-bg-white tw-p-[20px] tw-rounded-[10px]">
                         <div class="tw-flex tw-items-center tw-flex-gap-[20px] tw-pb-[10px] tw-justify-between tw-border-[0px] tw-border-b tw-border-solid tw-border-[#F1F1F2]">
                             <div class="tw-text-[30px] tw-font-semibold">Your JAVA Attendance</div>
-                            <button type="button" class="btn btn-light btn-icon !tw-bg-gray-200 !tw-size-[50px]"><i class="fa fa-users"></i></button>
+                            <button type="button" class="btn btn-light btn-icon !tw-bg-gray-200 !tw-size-[50px]"><i class="fa fa-user-group tw-text-primary"></i></button>
                            </div>
                         
                         <div class="tw-text-[60px] tw-font-bold tw-text-primary">88%</div>
