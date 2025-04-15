@@ -11,6 +11,9 @@ body{
     height: 40px;
     border-radius: 100%;
     padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 
 
