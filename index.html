@@ -36,11 +36,13 @@
 <body>
   <div
     class="tw-bg-[#F7F7FA] md:tw-pl-[240px] tw-pt-[60px] tw-min-h-screen tw-flex tw-flex-col tw-transition-all tw-duration-300 tw-ease-out [&:has([data-layout='sidebar'].open)]:tw-pl-0">
-    <div class="tw-fixed tw-z-[999] tw-left-0 tw-top-[60px] tw-bottom-0 tw-bg-white tw-w-[240px] tw-transition-all tw-duration-300 tw-ease-out 
+    <div class="tw-fixed tw-flex tw-flex-col tw-z-[999] tw-left-0 tw-top-[60px] tw-bottom-0 tw-bg-white tw-w-[240px] tw-transition-all tw-duration-300 tw-ease-out 
     -tw-translate-x-full 
     [&.open]:-tw-translate-x-0
+    [&.open]:tw-shadow-2xl
      md:-tw-translate-x-0 
     [&.open]:md:-tw-translate-x-full
+    [&.open]:md:tw-shadow-none
     " data-layout="sidebar">
       <div class="tw-flex-none tw-flex tw-items-center tw-gap-[10px] tw-p-[20px]">
         <div
@@ -49,6 +51,9 @@
         <div class="tw-text-[18px] tw-font-bold">Kushi Shroff</div>
       </div>
       <div class="
+       tw-overflow-y-auto
+            tw-flex-auto
+            tw-min-h-0
         [&_ul]:tw-list-none 
         [&_ul]:tw-p-0 
         [&_ul]:tw-m-0 
