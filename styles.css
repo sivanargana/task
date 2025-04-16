@@ -36,4 +36,5 @@ body{
     --bs-btn-active-border-color:var(--primary);
     --bs-btn-border-radius:99999px;
     --bs-btn-padding-x:2rem; 
+    --bs-btn-font-weight:bold
  }
