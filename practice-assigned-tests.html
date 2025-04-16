@@ -88,13 +88,13 @@
         [&_ul>li.active>a:before]:!tw-block
         " data-menu="group">
         <ul>
-            <li class="active"><a href="dashboard.html"><i class="fa fa-chart-simple"></i>Dashboard</a></li>
+            <li><a href="dashboard.html"><i class="fa fa-chart-simple"></i>Dashboard</a></li>
             <li><a href="attendance.html"><i class="fa fa-book-open-reader"></i>Attendance</a></li>
          
             <li><a data-bs-toggle="collapse" data-bs-target='[data-menu="l2"]'><i
                         class="fa fa-window-restore"></i>Practice Tests</a>
-                <ul data-menu="l2" class="collapse" data-bs-parent='[data-menu="group"]' class="collapsed">
-                    <li><a href="practice-assigned-tests.html">Assigned Tests</a></li>
+                <ul data-menu="l2" class="collapse show" data-bs-parent='[data-menu="group"]'>
+                    <li class="active"><a href="practice-assigned-tests.html">Assigned Tests</a></li>
                     <li><a href="practice-completed-tests.html">Completed Tests</a></li>
                 </ul>
             </li>

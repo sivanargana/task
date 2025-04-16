@@ -88,7 +88,7 @@
         [&_ul>li.active>a:before]:!tw-block
         " data-menu="group">
         <ul>
-            <li class="active"><a href="dashboard.html"><i class="fa fa-chart-simple"></i>Dashboard</a></li>
+            <li><a href="dashboard.html"><i class="fa fa-chart-simple"></i>Dashboard</a></li>
             <li><a href="attendance.html"><i class="fa fa-book-open-reader"></i>Attendance</a></li>
          
             <li><a data-bs-toggle="collapse" data-bs-target='[data-menu="l2"]'><i
@@ -100,8 +100,8 @@
             </li>
             <li><a data-bs-toggle="collapse" data-bs-target='[data-menu="l3"]' class="collapsed"><i
                         class="fa fa-rectangle-list"></i>Test Series</a>
-                <ul data-menu="l3" class="collapse" data-bs-parent='[data-menu="group"]'>
-                    <li><a href="series-assigned-tests.html">Assigned Tests</a></li>
+                <ul data-menu="l3" class="collapse show" data-bs-parent='[data-menu="group"]'>
+                    <li class="active"><a href="series-assigned-tests.html">Assigned Tests</a></li>
                     <li><a href="series-completed-tests.html">Completed Tests</a></li>
                 </ul>
             </li>
