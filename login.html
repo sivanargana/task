@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brainwiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            prefix: 'tw-',
+            corePlugins: {
+                preflight: false,
+            },
+            theme: {
+                extend:{
+                    colors:{
+                        "primary":"var(--primary)"
+                    }
+                }
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <div class="tw-bg-[#F7F7FA] tw-min-h-screen tw-flex tw-flex-col tw-justify-center">
+       
+
+        <div class="tw-flex tw-flex-col tw-gap-[30px]">
+            <div class="tw-text-[40px] tw-font-bold tw-text-center"><span class="tw-text-primary">BRAIN</span>WIZ</div>
+            <div class="tw-bg-white tw-p-[30px] tw-shadow-md tw-rounded-[10px] tw-w-[400px] tw-max-w-full tw-mx-auto">
+                <div class="tw-text-[30px] tw-font-bold tw-mb-[3px] tw-text-center">Login</div>
+                <div class="tw-text-[14px] tw-font-normal tw-mb-[30px] tw-text-gray-400 tw-text-center">Access your account
+
+                </div>
+                <div class="form-floating tw-mb-[10px]">
+                    <input type="email" class="form-control" id="username" placeholder="name@example.com">
+                    <label for="username">Username</label>
+                  </div>
+                  <div class="form-floating tw-mb-[30px]">
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                    <label for="password">Password</label>
+                  </div>
+                  <button type="button" class="btn btn-lg btn-primary tw-w-full">Login</button>
+                  <button type="button" class="btn btn-lg btn-outline-primary tw-w-full tw-mt-[10px]">Forgot Your Password?</button>
+            </div>
+        </div>
+      
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
