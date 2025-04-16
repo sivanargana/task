@@ -38,3 +38,6 @@ body{
     --bs-btn-padding-x:2rem; 
     --bs-btn-font-weight:bold
  }
+ .dropdown-menu{
+   --bs-dropdown-link-active-bg:var(--primary);
+ }
