@@ -16,6 +16,24 @@ if (sidebarElement) {
         setSidebar();
     })
 }
+let links = sidebarElement.querySelectorAll("a");
+let activatedRoute = window.location.pathname;
+links.forEach((item) => {
+    if (item.href) {
+        if (item.href.indexOf(activatedRoute) !== -1) {
+            item.parentElement.classList.add("active")
+            if (item.closest("ul").classList.contains("collapse")) {
+                item.closest("ul").classList.add("show")
+                item.closest("ul").previousElementSibling.classList.remove("collapsed")
+            } else {
+                item.closest("ul").classList.remove("show")
+                item.closest("ul").previousElementSibling.classList.add("collapsed")
+            }
+        } else {
+            item.parentElement.classList.remove("active")
+        }
+    }
+})
 function logout(e) {
     Swal.fire({
         html: `<div class="tw-font-bold">Are you sure you want to logout?</div>`,
@@ -25,7 +43,7 @@ function logout(e) {
         cancelButtonText: "No"
     }).then((result) => {
         if (result.isConfirmed) {
-            window.location = "/login.html"
+            window.location = "/login.php"
         }
     });
 }

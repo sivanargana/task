@@ -1,36 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brainwiz</title>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            prefix: 'tw-',
-            corePlugins: {
-                preflight: false,
-            },
-            theme: {
-                extend:{
-                    colors:{
-                        "primary":"var(--primary)"
-                    }
-                }
-            }
-            
-        }
-    </script>
-</head>
-<body>
-    <div
+<div
         class="tw-bg-[#F7F7FA] md:tw-pl-[240px] tw-pt-[60px] tw-min-h-screen tw-flex tw-flex-col tw-transition-all tw-duration-300 tw-ease-out [&:has([data-layout='sidebar'].open)]:tw-pl-0">
         <div class="tw-fixed tw-flex tw-flex-col tw-z-[999] tw-left-0 tw-top-[60px] tw-bottom-0 tw-bg-white tw-w-[240px] tw-transition-all tw-duration-300 tw-ease-out 
     -tw-translate-x-full 
@@ -90,30 +58,30 @@
         [&_ul>li.active>a:before]:!tw-block
         " data-menu="group">
         <ul>
-            <li><a href="dashboard.html"><i class="fa fa-chart-simple"></i>Dashboard</a></li>
-            <li><a href="attendance.html"><i class="fa fa-book-open-reader"></i>Attendance</a></li>
+            <li><a href="dashboard.php"><i class="fa fa-chart-simple"></i>Dashboard</a></li>
+            <li><a href="attendance.php"><i class="fa fa-book-open-reader"></i>Attendance</a></li>
          
-            <li><a data-bs-toggle="collapse" data-bs-target='[data-menu="l2"]'><i
+            <li><a data-bs-toggle="collapse" data-bs-target='[data-menu="l2"]' class="collapsed"><i
                         class="fa fa-window-restore"></i>Practice Tests</a>
-                <ul data-menu="l2" class="collapse" data-bs-parent='[data-menu="group"]' class="collapsed">
-                    <li><a href="practice-assigned-tests.html">Assigned Tests</a></li>
-                    <li><a href="practice-completed-tests.html">Completed Tests</a></li>
+                <ul data-menu="l2" class="collapse" data-bs-parent='[data-menu="group"]'>
+                    <li><a href="practice-assigned-tests.php">Assigned Tests</a></li>
+                    <li><a href="practice-completed-tests.php">Completed Tests</a></li>
                 </ul>
             </li>
             <li><a data-bs-toggle="collapse" data-bs-target='[data-menu="l3"]' class="collapsed"><i
                         class="fa fa-rectangle-list"></i>Test Series</a>
                 <ul data-menu="l3" class="collapse" data-bs-parent='[data-menu="group"]'>
-                    <li><a href="series-assigned-tests.html">Assigned Tests</a></li>
-                    <li><a href="series-completed-tests.html">Completed Tests</a></li>
+                    <li><a href="series-assigned-tests.php">Assigned Tests</a></li>
+                    <li><a href="series-completed-tests.php">Completed Tests</a></li>
                 </ul>
             </li>
-            <li><a href="daily-puzzles.html"><i class="fa fa-puzzle-piece"></i>Daily Puzzles</a></li>
-            <li><a href="download-pdfs.html"><i class="fa fa-file-pdf"></i>Downloaded PDFs</a></li>
-            <li><a href="coures.html"><i class="fa fa-book"></i>Courses</a></li>
-            <li><a href="live-sessions.html"><i class="fa fa-wifi"></i>Live Sessions</a></li>
-            <li><a href="profile.html"><i class="fa fa-user"></i>Profile</a></li>
-            <li class="active"><a href="upload-question.html"><i class="fa fa-table-columns"></i>Upload Question</a></li>
-            <li><a href="certifications.html"><i class="fa fa-award"></i>Certifications</a></li>
+            <li><a href="daily-puzzles.php"><i class="fa fa-puzzle-piece"></i>Daily Puzzles</a></li>
+            <li><a href="download-pdfs.php"><i class="fa fa-file-pdf"></i>Downloaded PDFs</a></li>
+            <li><a href="coures.php"><i class="fa fa-book"></i>Courses</a></li>
+            <li><a href="live-sessions.php"><i class="fa fa-wifi"></i>Live Sessions</a></li>
+            <li><a href="profile.php"><i class="fa fa-user"></i>Profile</a></li>
+            <li><a href="upload-question.php"><i class="fa fa-table-columns"></i>Upload Question</a></li>
+            <li><a href="certifications.php"><i class="fa fa-award"></i>Certifications</a></li>
         </ul>
             </div>
         </div>
@@ -141,26 +109,11 @@
                         data-bs-toggle="dropdown"></div>
                     <i class="fa fa-chevron-down tw-text-[12px] tw-text-gray-400" data-bs-toggle="dropdown"></i>
                     <ul class="dropdown-menu tw-shadow-2xl tw-border-gray-300 tw-w-[250px] tw-py-[10px] [&_.dropdown-item]:tw-flex [&_.dropdown-item]:tw-items-center [&_.dropdown-item]:tw-h-[45px]">
-                        <li><a class="dropdown-item" href="profile.html"><i class="fa fa-user tw-text-[20px] tw-mr-[15px] tw-text-gray-400"></i>Profile</a></li>
-                        <li><a class="dropdown-item" href="change-password.html"><i class="fa fa-cog tw-text-[20px] tw-mr-[15px] tw-text-gray-400"></i>Change Password</a></li>
-                        <li><a class="dropdown-item" href="login.html"><i class="fa fa-power-off tw-text-[20px] tw-mr-[15px] tw-text-gray-400"></i>Logout</a></li>
+                        <li><a class="dropdown-item" href="profile.php"><i class="fa fa-user tw-text-[20px] tw-mr-[15px] tw-text-gray-400"></i>Profile</a></li>
+                        <li><a class="dropdown-item" href="change-password.php"><i class="fa fa-cog tw-text-[20px] tw-mr-[15px] tw-text-gray-400"></i>Change Password</a></li>
+                        <li><a class="dropdown-item" href="login.php"><i class="fa fa-power-off tw-text-[20px] tw-mr-[15px] tw-text-gray-400"></i>Logout</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="tw-flex-auto tw-flex tw-flex-col tw-border-[0px] tw-border-t tw-border-l tw-border-solid tw-border-[#F1F1F2] tw-p-[20px] md:tw-p-[30px]">
-            <nav aria-label="breadcrumb" class="tw-flex-none">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li> 
-                    <li class="breadcrumb-item active" aria-current="page">Upload Question</li>
-                </ol>
-            </nav>
-        </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-        crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="assets/js/scripts.js"></script>
-</body>
-</html>
