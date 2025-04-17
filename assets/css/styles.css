@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 :root{
     --primary:#FF6800;
 }
 body{
-    font-family: "Roboto", sans-serif;
+   font-family: "DM Sans", sans-serif;
+
 
   }
  .btn-icon{
@@ -26,6 +28,9 @@ body{
  a{
    color: var(--primary);
  }
+ .btn{
+   --bs-btn-font-weight:500;
+ }
 
  .btn-primary{
    --bs-btn-bg:var(--primary);
@@ -40,6 +45,11 @@ body{
    --bs-btn-hover-color:var(--primary);
    --bs-btn-active-color:var(--primary);
    text-decoration: none;
+ }
+
+ .form-control:focus,.form-select:focus{
+   box-shadow: 0 0 0 .25rem color-mix(in srgb, var(--primary) 20%, white);
+   border-color: color-mix(in srgb, var(--primary) 50%, white);
  }
 
  /* .btn-primary{
