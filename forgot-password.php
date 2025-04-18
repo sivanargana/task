@@ -3,7 +3,7 @@
     <div class="tw-bg-[#F7F7FA] tw-min-h-screen tw-grid tw-grid-cols-12">
 
         <div class="tw-bg-slate-100 tw-col-span-12 xl:tw-col-span-7 tw-hidden md:tw-flex tw-flex-col tw-items-center tw-justify-center tw-min-w-0 tw-p-[20px] md:tw-p-[40px]">
-            <img src="assets/images/register.svg"  class="tw-w-[600px] tw-max-w-full">
+            <img src="assets/images/forgot-password.svg"  class="tw-w-[600px] tw-max-w-full">
         </div>
         <div class="tw-bg-white tw-col-span-12 xl:tw-col-span-5 tw-min-w-0 tw-flex tw-flex-col tw-justify-center tw-py-[40px] tw-px-[20px] md:tw-p-[40px]">
 
