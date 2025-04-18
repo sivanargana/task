@@ -1,6 +1,6 @@
 <div
-        class="tw-bg-[#F7F7FA] md:tw-pl-[240px] tw-pt-[60px] tw-min-h-screen tw-flex tw-flex-col tw-transition-all tw-duration-300 tw-ease-out [&:has([data-layout='sidebar'].open)]:tw-pl-0">
-        <div class="tw-fixed tw-flex tw-flex-col tw-z-[999] tw-left-0 tw-top-[60px] tw-bottom-0 tw-bg-white tw-w-[240px] tw-transition-all tw-duration-300 tw-ease-out 
+        class="tw-bg-[#F7F7FA] md:tw-pl-[260px] tw-pt-[60px] tw-min-h-screen tw-flex tw-flex-col tw-transition-all tw-duration-300 tw-ease-out [&:has([data-layout='sidebar'].open)]:tw-pl-0">
+        <div class="tw-fixed tw-flex tw-flex-col tw-z-[999] tw-left-0 tw-top-[60px] tw-bottom-0 tw-bg-white tw-w-[260px] tw-transition-all tw-duration-300 tw-ease-out 
     -tw-translate-x-full 
     [&.open]:-tw-translate-x-0
     [&.open]:tw-shadow-2xl
@@ -8,6 +8,7 @@
     [&.open]:md:-tw-translate-x-full
     [&.open]:md:tw-shadow-none
     " data-layout="sidebar">
+    <button type="button" class="btn btn-light btn-icon tw-size-[40px] tw-absolute tw-top-[5px] tw-right-[5px] tw-visible md:tw-invisible" data-layout="toggle"><i class="fa fa-close"></i></button>
             <div class="tw-flex-none tw-flex tw-items-center tw-gap-[10px] tw-p-[20px]">
                 <div
                     class="tw-size-[40px] tw-bg-gray-300 tw-rounded-full tw-bg-cover tw-bg-center tw-bg-[url(https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)]">
@@ -24,7 +25,7 @@
         [&_ul]:tw-flex 
         [&_ul]:tw-flex-col
         [&_ul>li>a]:tw-flex
-        [&_ul>li>a]:tw-gap-[15px]
+        [&_ul>li>a]:tw-gap-[5px]
         [&_ul>li>a]:tw-text-black
         [&_ul>li>a]:tw-h-[50px]
         [&_ul>li>a]:tw-cursor-pointer
@@ -45,10 +46,19 @@
         [&_ul>li>a]:!tw-text-[#6F6F6F]
         [&_ul>li>a>i]:tw-size-[24px]
         [&_ul>li>a>i]:tw-flex
+        [&_ul>li>a>i]:tw-mr-[10px]
         [&_ul>li>a>i]:tw-items-center
         [&_ul>li>a>i]:tw-justify-center
         [&_ul>li>a>i]:tw-text-[18px]
-        [&_ul>li>a[data-bs-toggle='collapse']:after]:tw-ml-auto
+        [&_ul>li>a>span]:tw-flex-auto
+        [&_ul>li>a>span]:tw-truncate 
+        [&_ul>li>a>div]:tw-bg-red-500
+        [&_ul>li>a>div]:tw-text-white
+        [&_ul>li>a>div]:tw-text-[12px]
+        [&_ul>li>a>div]:tw-px-[6px]
+        [&_ul>li>a>div]:tw-rounded-full
+       
+
         [&_ul>li>a[data-bs-toggle='collapse']:after]:tw-content-['\f077']
         [&_ul>li>a.collapsed[data-bs-toggle='collapse']:after]:tw-content-['\f078']
         [&_ul>li>a[data-bs-toggle='collapse']:after]:tw-font-bold
@@ -58,51 +68,42 @@
         [&_ul>li.active>a:before]:!tw-block
         " data-menu="group">
         <ul>
-            <li><a href="dashboard.php"><i class="fa fa-chart-simple"></i>Dashboard</a></li>
-            <li><a href="attendance.php"><i class="fa fa-book-open-reader"></i>Attendance</a></li>
+            <li><a href="dashboard.php"><i class="fa fa-chart-simple"></i><span>Dashboard</span></a></li>
+            <li><a href="attendance.php"><i class="fa fa-book-open-reader"></i><span>Attendance</span></a></li>
          
             <li><a data-bs-toggle="collapse" data-bs-target='[data-menu="l2"]' class="collapsed"><i
-                        class="fa fa-window-restore"></i>Practice Tests</a>
+                        class="fa fa-window-restore"></i><span>Practice Tests</span> <div>New</div></a>
                 <ul data-menu="l2" class="collapse" data-bs-parent='[data-menu="group"]'>
-                    <li><a href="practice-assigned-tests.php">Assigned Tests</a></li>
-                    <li><a href="practice-completed-tests.php">Completed Tests</a></li>
+                    <li><a href="practice-assigned-tests.php"><span>Assigned Tests</span></a></li>
+                    <li><a href="practice-completed-tests.php"><span>Completed Tests</span></a></li>
                 </ul>
             </li>
             <li><a data-bs-toggle="collapse" data-bs-target='[data-menu="l3"]' class="collapsed"><i
-                        class="fa fa-rectangle-list"></i>Test Series</a>
+                        class="fa fa-rectangle-list"></i><span>Test Series</span> <div>New</div></a>
                 <ul data-menu="l3" class="collapse" data-bs-parent='[data-menu="group"]'>
-                    <li><a href="series-assigned-tests.php">Assigned Tests</a></li>
-                    <li><a href="series-completed-tests.php">Completed Tests</a></li>
+                    <li><a href="series-assigned-tests.php"><span>Assigned Tests</span></a></li>
+                    <li><a href="series-completed-tests.php"><span>Completed Tests</span></a></li>
                 </ul>
             </li>
-            <li><a href="daily-puzzles.php"><i class="fa fa-puzzle-piece"></i>Daily Puzzles</a></li>
-            <li><a href="download-pdfs.php"><i class="fa fa-file-pdf"></i>Downloaded PDFs</a></li>
-            <li><a href="coures.php"><i class="fa fa-book"></i>Courses</a></li>
-            <li><a href="live-sessions.php"><i class="fa fa-wifi"></i>Live Sessions</a></li>
-            <li><a href="profile.php"><i class="fa fa-user"></i>Profile</a></li>
-            <li><a href="upload-question.php"><i class="fa fa-table-columns"></i>Upload Question</a></li>
-            <li><a href="certifications.php"><i class="fa fa-award"></i>Certifications</a></li>
+            <li><a href="daily-puzzles.php"><i class="fa fa-puzzle-piece"></i><span>Daily Puzzles</span></a></li>
+            <li><a href="download-pdfs.php"><i class="fa fa-file-pdf"></i><span>Downloaded PDFs</span></a></li>
+            <li><a href="coures.php"><i class="fa fa-book"></i><span>Courses</span></a></li>
+            <li><a href="live-sessions.php"><i class="fa fa-wifi"></i><span>Live Sessions</span> <div>New</div></a></li>
+            <li><a href="profile.php"><i class="fa fa-user"></i><span>Profile</span></a></li>
+            <li><a href="upload-question.php"><i class="fa fa-table-columns"></i><span>Upload Question</span></a></li>
+            <li><a href="certifications.php"><i class="fa fa-award"></i><span>Certifications</span></a></li>
         </ul>
             </div>
         </div>
         <div
             class="tw-fixed tw-left-0 tw-top-0 tw-right-0 tw-h-[60px] tw-bg-white tw-flex tw-items-center tw-gap-[0px] tw-z-[999]">
-            <div class="tw-flex-none tw-flex tw-items-center tw-gap-[10px] tw-px-[20px] md:tw-w-[240px]">
-                <button type="button" class="btn btn-dark" data-layout="toggle"><i class="fa fa-bars"></i></button>
-                <div class="tw-text-[20px] tw-font-bold"><span class="tw-text-primary">BRAIN</span>WIZ</div>
+            <div class="tw-flex-none tw-flex tw-items-center tw-gap-[10px] tw-px-[20px]">
+                <button type="button" class="btn btn-dark btn-icon tw-size-[40px]" data-layout="toggle"><i class="fa fa-bars"></i></button>
+                <img src="assets/images/logo.svg" class="tw-flex-col tw-w-[150px] tw-max-w-full" />
             </div>
-            <div class="tw-flex-none tw-hidden md:tw-flex">
-                <label
-                    class="tw-w-[300px] [&:has(input:focus)]:tw-w-[400px] [&:has(input:focus)]:tw-bg-gray-200/80 tw-transition-all tw-duration-300 tw-ease-out tw-max-w-full tw-flex tw-items-center tw-rounded-[5px] tw-border tw-border-solid tw-border-[#D7D9DE] tw-bg-[#F5F5F5] tw-px-[10px]">
-                    <i class="fa fa-magnifying-glass tw-text-[#ACACAC]"></i>
-                    <input type="text"
-                        class="form-control !tw-border-none !tw-shadow-none !tw-bg-transparent tw-text-[#ACACAC] placeholder:tw-text-[#ACACAC]"
-                        placeholder="Search">
-                </label>
-            </div>
+           
             <div class="tw-flex-none tw-flex tw-gap-[10px] tw-items-center tw-ml-auto tw-px-[10px]">
-                <button type="button" class="btn btn-light btn-icon tw-block md:!tw-hidden"><i
-                        class="fas fa-magnifying-glass"></i></button>
+                
                 <button type="button" class="btn btn-light btn-icon"><i class="far fa-bell"></i></button>
                 <div class="dropdown tw-flex tw-items-center tw-gap-[5px] tw-cursor-pointer">
                     <div class="tw-size-[40px] tw-bg-gray-300 tw-rounded-full tw-bg-cover tw-bg-center tw-bg-[url(https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)]"
@@ -111,7 +112,7 @@
                     <ul class="dropdown-menu tw-shadow-2xl tw-border-gray-300 tw-w-[250px] tw-py-[10px] [&_.dropdown-item]:tw-flex [&_.dropdown-item]:tw-items-center [&_.dropdown-item]:tw-h-[45px]">
                         <li><a class="dropdown-item" href="profile.php"><i class="fa fa-user tw-text-[20px] tw-mr-[15px] tw-text-gray-400"></i>Profile</a></li>
                         <li><a class="dropdown-item" href="change-password.php"><i class="fa fa-cog tw-text-[20px] tw-mr-[15px] tw-text-gray-400"></i>Change Password</a></li>
-                        <li><a class="dropdown-item" href="login.php"><i class="fa fa-power-off tw-text-[20px] tw-mr-[15px] tw-text-gray-400"></i>Logout</a></li>
+                        <li><a class="dropdown-item" onclick="logout()"><i class="fa fa-power-off tw-text-[20px] tw-mr-[15px] tw-text-gray-400"></i>Logout</a></li>
                     </ul>
                 </div>
             </div>

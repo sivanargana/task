@@ -9,7 +9,7 @@
             <div class="tw-flex-auto tw-grid tw-grd-cols-1 md:tw-grid-cols-2 tw-gap-[20px] md:tw-gap-[30px]">
                 <div class="tw-flex tw-flex-col">
                    <div class="tw-shadow-md tw-bg-white tw-p-[20px] tw-rounded-[10px] tw-flex tw-flex-col tw-items-center tw-gap-[20px]">
-                    <div class="tw-text-[50px] tw-font-bold tw-leading-tight">Show your <span class="tw-text-primary">QR code</span> to your college representative</div>
+                    <div class="tw-text-[30px] tw-font-bold tw-leading-tight">Show your <span class="tw-text-primary">QR code</span> to your college representative</div>
                     <div class="tw-shadow-md tw-bg-gray-100 tw-py-[20px] tw-px-[50px] tw-rounded-[10px] tw-flex tw-flex-col tw-items-center tw-justify-center tw-gap-[20px]">
                         <div class="tw-flex tw-flex-col tw-items-center tw-justify-center tw-gap-[5px]">
                             <div
@@ -26,7 +26,7 @@
                 <div class="tw-flex tw-flex-col tw-gap-[20px] md:tw-gap-[30px]">
                     <div class="tw-shadow-md tw-bg-white tw-p-[20px] tw-rounded-[10px]">
                        <div class="tw-flex tw-items-center tw-flex-gap-[20px] tw-pb-[10px] tw-justify-between tw-border-[0px] tw-border-b tw-border-solid tw-border-[#F1F1F2]">
-                        <div class="tw-text-[30px] tw-font-semibold">Your CRT Attendance</div>
+                        <div class="tw-text-[25px] tw-font-semibold">Your CRT Attendance</div>
                         <button type="button" class="btn btn-light btn-icon !tw-bg-gray-200 !tw-size-[50px]"><i class="fa fa-user-group tw-text-primary"></i></button>
                        </div>
                         <div class="tw-text-[60px] tw-font-bold tw-text-primary">92%</div>
@@ -34,7 +34,7 @@
                     </div>
                     <div class="tw-shadow-md tw-bg-white tw-p-[20px] tw-rounded-[10px]">
                         <div class="tw-flex tw-items-center tw-flex-gap-[20px] tw-pb-[10px] tw-justify-between tw-border-[0px] tw-border-b tw-border-solid tw-border-[#F1F1F2]">
-                            <div class="tw-text-[30px] tw-font-semibold">Your JAVA Attendance</div>
+                            <div class="tw-text-[25px] tw-font-semibold">Your JAVA Attendance</div>
                             <button type="button" class="btn btn-light btn-icon !tw-bg-gray-200 !tw-size-[50px]"><i class="fa fa-user-group tw-text-primary"></i></button>
                            </div>
                         
