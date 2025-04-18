@@ -8,7 +8,7 @@
     [&.open]:md:-tw-translate-x-full
     [&.open]:md:tw-shadow-none
     " data-layout="sidebar">
-    <button type="button" class="btn btn-light btn-icon tw-size-[40px] tw-absolute tw-top-[5px] tw-right-[5px] tw-visible md:tw-invisible" data-layout="toggle"><i class="fa fa-close"></i></button>
+    <!-- <button type="button" class="btn btn-light btn-icon tw-size-[40px] tw-absolute tw-top-[5px] tw-right-[5px] tw-visible md:tw-invisible" data-layout="toggle"><i class="fa fa-close"></i></button> -->
             <div class="tw-flex-none tw-flex tw-items-center tw-gap-[10px] tw-p-[20px]">
                 <div
                     class="tw-size-[40px] tw-bg-gray-300 tw-rounded-full tw-bg-cover tw-bg-center tw-bg-[url(https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)]">
@@ -98,7 +98,7 @@
         <div
             class="tw-fixed tw-left-0 tw-top-0 tw-right-0 tw-h-[60px] tw-bg-white tw-flex tw-items-center tw-gap-[0px] tw-z-[999]">
             <div class="tw-flex-none tw-flex tw-items-center tw-gap-[10px] tw-px-[20px]">
-                <button type="button" class="btn btn-dark btn-icon tw-size-[40px]" data-layout="toggle"><i class="fa fa-bars"></i></button>
+                <button type="button" class="btn btn-dark btn-icon tw-size-[40px]" data-layout="toggle"><i class="fa"></i></button>
                 <img src="assets/images/logo.svg" class="tw-flex-col tw-w-[150px] tw-max-w-full" />
             </div>
            
