@@ -8,7 +8,7 @@
         <div class="tw-bg-white tw-col-span-12 lg:tw-col-span-5 tw-min-w-0 tw-flex tw-flex-col tw-justify-center tw-py-[40px] tw-px-[20px] md:tw-p-[40px]">
 
             <div class="md:tw-w-[450px] tw-max-w-full tw-mx-auto">
-                <img src="assets/images/logo.svg" class="tw-h-[30px] tw-max-w-full tw-mb-[20px] md:tw-mb-[40px]" />
+                <img src="assets/images/logo.svg" class="tw-h-[30px] tw-max-w-full tw-mb-[20px] md:tw-mb-[60px]" />
                 <div class="tw-text-[30px] tw-font-bold tw-mb-[3px]">Welcome to Back! 👋</div>
                 <div class="tw-text-[14px] tw-font-normal tw-mb-[20px] tw-text-gray-400">Please sign in to your account and start the adventure</div>
                 <div class="form-floating tw-mb-[10px]">

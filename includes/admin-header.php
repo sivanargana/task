@@ -52,7 +52,7 @@
         [&_ul>li>a>i]:tw-text-[18px]
         [&_ul>li>a>span]:tw-flex-auto
         [&_ul>li>a>span]:tw-truncate 
-        [&_ul>li>a>div]:tw-bg-red-500
+        [&_ul>li>a>div]:tw-bg-primary
         [&_ul>li>a>div]:tw-text-white
         [&_ul>li>a>div]:tw-text-[12px]
         [&_ul>li>a>div]:tw-px-[6px]
@@ -72,14 +72,14 @@
             <li><a href="attendance.php"><i class="fa fa-book-open-reader"></i><span>Attendance</span></a></li>
          
             <li><a data-bs-toggle="collapse" data-bs-target='[data-menu="l2"]' class="collapsed"><i
-                        class="fa fa-window-restore"></i><span>Practice Tests</span> <div>New</div></a>
+                        class="fa fa-window-restore"></i><span>Practice Tests</span> <div class="glare-effect">New</div></a>
                 <ul data-menu="l2" class="collapse" data-bs-parent='[data-menu="group"]'>
                     <li><a href="practice-assigned-tests.php"><span>Assigned Tests</span></a></li>
                     <li><a href="practice-completed-tests.php"><span>Completed Tests</span></a></li>
                 </ul>
             </li>
             <li><a data-bs-toggle="collapse" data-bs-target='[data-menu="l3"]' class="collapsed"><i
-                        class="fa fa-rectangle-list"></i><span>Test Series</span> <div>New</div></a>
+                        class="fa fa-rectangle-list"></i><span>Test Series</span> <div class="glare-effect">New</div></a>
                 <ul data-menu="l3" class="collapse" data-bs-parent='[data-menu="group"]'>
                     <li><a href="series-assigned-tests.php"><span>Assigned Tests</span></a></li>
                     <li><a href="series-completed-tests.php"><span>Completed Tests</span></a></li>
@@ -88,18 +88,19 @@
             <li><a href="daily-puzzles.php"><i class="fa fa-puzzle-piece"></i><span>Daily Puzzles</span></a></li>
             <li><a href="download-pdfs.php"><i class="fa fa-file-pdf"></i><span>Downloaded PDFs</span></a></li>
             <li><a href="coures.php"><i class="fa fa-book"></i><span>Courses</span></a></li>
-            <li><a href="live-sessions.php"><i class="fa fa-wifi"></i><span>Live Sessions</span> <div>New</div></a></li>
+            <li><a href="live-sessions.php"><i class="fa fa-wifi"></i><span>Live Sessions</span> <div class="glare-effect">New</div></a></li>
             <li><a href="profile.php"><i class="fa fa-user"></i><span>Profile</span></a></li>
             <li><a href="upload-question.php"><i class="fa fa-table-columns"></i><span>Upload Question</span></a></li>
             <li><a href="certifications.php"><i class="fa fa-award"></i><span>Certifications</span></a></li>
+            <li><a onclick="logout()"><i class="fa fa-power-off"></i><span>Logout</span></a></li>
         </ul>
             </div>
         </div>
         <div
             class="tw-fixed tw-left-0 tw-top-0 tw-right-0 tw-h-[60px] tw-bg-white tw-flex tw-items-center tw-gap-[0px] tw-z-[999]">
             <div class="tw-flex-none tw-flex tw-items-center tw-gap-[10px] tw-px-[20px]">
-                <button type="button" class="btn btn-dark btn-icon tw-size-[40px]" data-layout="toggle"><i class="fa"></i></button>
-                <img src="assets/images/logo.svg" class="tw-flex-col tw-w-[150px] tw-max-w-full" />
+                <button type="button" class="btn btn-dark btn-icon tw-size-[30px] [&_i]:tw-text-[16px]" data-layout="toggle"><i class="fa"></i></button>
+                <img src="assets/images/logo.svg" class="tw-flex-col tw-max-w-full tw-h-[35px] tw-max-w-full" />
             </div>
            
             <div class="tw-flex-none tw-flex tw-gap-[10px] tw-items-center tw-ml-auto tw-px-[10px]">
