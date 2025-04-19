@@ -20,7 +20,7 @@
     </div>
     <div class="tw-flex tw-flex-col tw-p-[20px] tw-flex tw-flex-col tw-items-center tw-justify-center tw-gap-[30px]">
         <img src="assets/images/certificate.png" class="tw-w-[500px] tw-max-w-full" />
-        <a class="btn btn-lg btn-primary" href="#"><i class="fa fa-download"></i> Download Your Cartificate</a>
+        <a class="btn btn-primary" href="#"><i class="fa fa-download"></i> Download Your Cartificate</a>
     </div>
 </div>
 <?php include("includes/admin-footer.php"); ?>

@@ -13,16 +13,16 @@
                 <div class="tw-text-[14px] tw-font-normal tw-text-gray-400">Lost your password? Please enter your email address. You will receive a link to create a new password via email.</div>
                 <div class="tw-grid tw-grid-cols-12 tw-gap-[10px] tw-my-[20px]">
                    
-                       <div class="tw-col-span-12 md:tw-col-span-12 form-floating">
-                        <input type="email" class="form-control" id="email" placeholder="">
+                       <div class="tw-col-span-12 md:tw-col-span-12 floating-label">
+                        <input type="email" class="form-control" id="email">
                         <label for="email">Email</label>
                       </div>
                  
                 </div>
                  
                  <div class="tw-flex tw-flex-col tw-gap-[10px]"> 
-                    <a href="login.php" class="btn btn-lg btn-primary tw-w-full">Send Reset Link</a> 
-                    <!-- <button tyoe="button" class="btn btn-lg btn-primary tw-w-full">Sign Up</button>  -->
+                    <a href="login.php" class="btn btn-primary tw-w-full">Send Reset Link</a> 
+                    <!-- <button tyoe="button" class="btn btn-primary tw-w-full">Sign Up</button>  -->
                     <a href="login.php" class="btn btn-link tw-w-full"><i class="fa fa-angle-left tw-mr-[10px]"></i>Back to Sign In</a>
                  </div>
             </div>

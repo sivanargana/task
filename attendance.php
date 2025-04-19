@@ -18,7 +18,7 @@
                             <div class="tw-text-[20px] tw-font-bold">Kushi Shroff</div>
                         </div>
                         <img src="https://pngimg.com/uploads/qr_code/qr_code_PNG10.png" class="tw-w-[300px] tw-max-w-full tw-p-[10px] tw-bg-white tw-shadow tw-rounded-[5px]" />
-                        <a class="btn btn-lg btn-primary" href="#"><i class="fa fa-download"></i> Download</a>
+                        <a class="btn btn-primary" href="#"><i class="fa fa-download"></i> Download</a>
                     </div>
                     
                    </div>

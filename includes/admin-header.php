@@ -52,13 +52,11 @@
         [&_ul>li>a>i]:tw-text-[18px]
         [&_ul>li>a>span]:tw-flex-auto
         [&_ul>li>a>span]:tw-truncate 
-        [&_ul>li>a>div]:tw-bg-primary
+        [&_ul>li>a>div]:tw-bg-red-400
         [&_ul>li>a>div]:tw-text-white
         [&_ul>li>a>div]:tw-text-[12px]
         [&_ul>li>a>div]:tw-px-[6px]
         [&_ul>li>a>div]:tw-rounded-full
-       
-
         [&_ul>li>a[data-bs-toggle='collapse']:after]:tw-content-['\f077']
         [&_ul>li>a.collapsed[data-bs-toggle='collapse']:after]:tw-content-['\f078']
         [&_ul>li>a[data-bs-toggle='collapse']:after]:tw-font-bold

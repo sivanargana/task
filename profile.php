@@ -15,48 +15,48 @@
                 </div>
                
                 <div class="tw-p-[20px] tw-pt-[50px] xl:tw-p-[20px] tw-bg-white">
-                    <div class="tw-container tw-mx-auto tw-max-w-[800px]">
+                    <div class="tw-container tw-mx-auto tw-max-w-[600px]">
                     <div class="tw-text-[18px] tw-font-bold tw-mb-[5px]">Kushi Shroff</div>
                     <div class="tw-flex-col lg:tw-flex-row tw-flex tw-gap-[10px] md:tw-gap-[20px] [&_span]:tw-flex [&_span]:tw-gap-[10px] [&_span]:tw-items-center [&_span>i]:tw-text-gray-400">
                         <span><i class="fa fa-book-open fa-fw"></i>Shri Ramdeobaba University</span>
                         <span><i class="fa fa-calendar fa-fw"></i>Join 22 Aug 2024</span>
                     </div>
                     <hr class="tw-border-gray-400">
-                    <div class="tw-grid tw-grid-cols-12 tw-gap-[10px] tw-my-[20px]">
-                    <div class="tw-col-span-12 md:tw-col-span-6 form-floating">
-                        <input type="email" class="form-control" id="firstname" placeholder="">
+                    <div class="tw-grid tw-grid-cols-12 tw-gap-[20px] tw-my-[20px]">
+                    <div class="tw-col-span-12 md:tw-col-span-6 floating-label">
+                        <input type="email" class="form-control" id="firstname">
                         <label for="firstname">First Name</label>
                       </div>
-                    <div class="tw-col-span-12 md:tw-col-span-6 form-floating">
-                        <input type="email" class="form-control" id="lastname" placeholder="">
+                    <div class="tw-col-span-12 md:tw-col-span-6 floating-label">
+                        <input type="email" class="form-control" id="lastname">
                         <label for="lastname">Last Name</label>
                       </div>
-                    <div class="tw-col-span-12 md:tw-col-span-6 form-floating">
-                        <input type="email" class="form-control" id="email" placeholder="">
+                    <div class="tw-col-span-12 md:tw-col-span-6 floating-label">
+                        <input type="email" class="form-control" id="email">
                         <label for="email">Email</label>
                       </div>
-                    <div class="tw-col-span-12 md:tw-col-span-6 form-floating">
-                        <input type="email" class="form-control" id="mobile" placeholder="">
+                    <div class="tw-col-span-12 md:tw-col-span-6 floating-label">
+                        <input type="email" class="form-control" id="mobile">
                         <label for="mobile">Mobile</label>
                       </div>
-                      <div class="tw-col-span-12 form-floating">
+                      <div class="tw-col-span-12 floating-label">
                         <select class="form-select" id="subject">
-                            <option selected>Selected</option>
+                            <option selected>Select</option>
                             <option value="1">One</option>
                             <option value="2">Two</option>
                             <option value="3">Three</option>
                           </select>
                         <label for="subject">Subject</label>
                       </div>
-                      <div class="tw-col-span-12 form-floating">
-                        <input type="text" class="form-control" id="College" placeholder="">
+                      <div class="tw-col-span-12 floating-label">
+                        <input type="text" class="form-control" id="College">
                         <label for="College">College</label>
                       </div>
                 </div>
                 <hr class="tw-border-gray-400">
                 <div class="tw-flex tw-justify-end tw-gap-[10px]">
-                <a href="#" class="btn btn-lg btn-secondary">Cancel</a> 
-                <a href="#" class="btn btn-lg btn-primary">Save Details</a> 
+                <a href="#" class="btn btn-secondary">Cancel</a> 
+                <a href="#" class="btn btn-primary">Save Details</a> 
                 </div>
                     </div>
               

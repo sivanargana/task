@@ -28,5 +28,29 @@
             
         }
     </script>
+ 
+      <style type="text/tailwindcss">
+    @layer components {
+        .btn-icon{
+            @apply tw-size-[40px] tw-rounded-full tw-p-0 tw-flex tw-items-center tw-justify-center tw-text-[20px];
+        }
+      .floating-label {
+         @apply tw-relative;
+         &.active{
+
+            label{
+
+                @apply tw-top-0 tw-text-[12px]
+
+            }
+
+         }
+         label{
+            @apply tw-text-[14px] tw-px-[2px] tw-transition-all tw-duration-300 tw-ease-out tw-absolute tw-top-1/2 -tw-translate-y-1/2 tw-left-[10px] tw-bg-white;
+
+         }
+      }
+    }
+  </style>
 </head>
 <body>

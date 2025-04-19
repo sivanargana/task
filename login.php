@@ -11,18 +11,18 @@
                 <img src="assets/images/logo.svg" class="tw-h-[30px] tw-max-w-full tw-mb-[20px] md:tw-mb-[60px]" />
                 <div class="tw-text-[30px] tw-font-bold tw-mb-[3px]">Welcome to Back! 👋</div>
                 <div class="tw-text-[14px] tw-font-normal tw-mb-[20px] tw-text-gray-400">Please sign in to your account and start the adventure</div>
-                <div class="form-floating tw-mb-[10px]">
-                    <input type="email" class="form-control" id="username" placeholder="name@example.com">
+                <div class="floating-label tw-mb-[10px]">
+                    <input type="email" class="form-control" id="username">
                     <label for="username">Username</label>
                   </div>
-                  <div class="form-floating tw-mb-[20px]">
-                    <input type="password" class="form-control" id="password" placeholder="Password">
+                  <div class="floating-label tw-mb-[20px]">
+                    <input type="password" class="form-control" id="password">
                     <label for="password">Password</label>
                   </div>
                  <div class="tw-flex tw-flex-col tw-gap-[10px]">
                     <a href="forgot-password.php" class="btn btn-link tw-w-full">Forgot Your Password?</a>
-                    <a  data-bs-toggle="modal" data-bs-target="#otpmodal" class="btn btn-lg btn-primary tw-w-full">Sign In</a>
-                    <!-- <button type="button" class="btn btn-lg btn-primary tw-w-full">Sign In</button> -->
+                    <a  data-bs-toggle="modal" data-bs-target="#otpmodal" class="btn btn-primary tw-w-full">Sign In</a>
+                    <!-- <button type="button" class="btn btn-primary tw-w-full">Sign In</button> -->
                     <a href="register.php" class="btn btn-link tw-w-full"><span class="tw-text-gray-500">New on our platform?</span> Sign Up</a>
                  </div>
             </div>

@@ -1,91 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
-:root{
-    --primary:#3b82f6;
+:root {
+  --primary: #3b82f6;
 }
-body{
-   font-family: "DM Sans", sans-serif;
-
-
-  }
- .btn-icon{
- 
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    padding: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-
-
- }
-
- .btn-icon i{
-    font-size: 20px;
- }
-
- a{
-   color: var(--primary);
- }
- .btn{
-   --bs-btn-font-weight:500;
- }
-
- .btn-primary{
-   --bs-btn-bg:var(--primary);
-   --bs-btn-border-color:var(--primary);
-   --bs-btn-hover-bg:color-mix(in srgb, var(--primary), black 25%);
-   --bs-btn-hover-border-color:color-mix(in srgb, var(--primary), black 25%);
-   --bs-btn-active-bg:var(--primary);
-   --bs-btn-active-border-color:var(--primary);
- }
- .btn-outline-primary{
-  --bs-btn-color:var(--primary);
-  --bs-btn-border-color:var(--primary);
-  --bs-btn-hover-color:var(--primary);
-  --bs-btn-hover-border-color:var(--primary);
-  --bs-btn-active-color:var(--primary);
-  --bs-btn-active-border-color:var(--primary);
-  --bs-btn-hover-color:white;
-  --bs-btn-active-color:white;
-  --bs-btn-hover-bg:var(--primary);
-  --bs-btn-active-bg:var(--primary);
- }
- .btn-link{
-   --bs-btn-color: var(--primary);
-   --bs-btn-hover-color:var(--primary);
-   --bs-btn-active-color:var(--primary);
-   text-decoration: none;
- }
-
- .form-control:focus,.form-select:focus{
-   box-shadow: 0 0 0 .25rem color-mix(in srgb, var(--primary) 20%, white);
-   border-color: color-mix(in srgb, var(--primary) 50%, white);
- }
-
- .dropdown-menu{
-   --bs-dropdown-link-active-bg:var(--primary);
- }
- .glare-effect{
+body {
+  font-family: "DM Sans", sans-serif;
+}
+a {
+  color: var(--primary);
+}
+.btn {
+  --bs-btn-font-weight: 500;
+}
+.btn-primary {
+  --bs-btn-bg: var(--primary);
+  --bs-btn-border-color: var(--primary);
+  --bs-btn-hover-bg: color-mix(in srgb, var(--primary), black 25%);
+  --bs-btn-hover-border-color: color-mix(in srgb, var(--primary), black 25%);
+  --bs-btn-active-bg: var(--primary);
+  --bs-btn-active-border-color: var(--primary);
+}
+.btn-outline-primary {
+  --bs-btn-color: var(--primary);
+  --bs-btn-border-color: var(--primary);
+  --bs-btn-hover-color: var(--primary);
+  --bs-btn-hover-border-color: var(--primary);
+  --bs-btn-active-color: var(--primary);
+  --bs-btn-active-border-color: var(--primary);
+  --bs-btn-hover-color: white;
+  --bs-btn-active-color: white;
+  --bs-btn-hover-bg: var(--primary);
+  --bs-btn-active-bg: var(--primary);
+}
+.btn-link {
+  --bs-btn-color: var(--primary);
+  --bs-btn-hover-color: var(--primary);
+  --bs-btn-active-color: var(--primary);
+  text-decoration: none;
+}
+.form-control:focus,
+.form-select:focus {
+  box-shadow: 0 0 0 .25rem color-mix(in srgb, var(--primary) 20%, white);
+  border-color: color-mix(in srgb, var(--primary) 50%, white);
+}
+.dropdown-menu {
+  --bs-dropdown-link-active-bg: var(--primary);
+}
+.glare-effect {
   position: relative;
   overflow: hidden;
- }
- .glare-effect:before {
+}
+.glare-effect:before {
   content: '';
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, 
-              rgba(255,255,255,0) 0%, 
-              rgba(255,255,255,0.7) 50%, 
-              rgba(255,255,255,0) 100%);
+  background: linear-gradient(90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.7) 50%,
+      rgba(255, 255, 255, 0) 100%);
   transform: skewX(-20deg);
   animation: glare 3s infinite;
 }
-
 @keyframes glare {
   0% {
     left: -100%;
