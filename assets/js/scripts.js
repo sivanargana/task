@@ -1,3 +1,6 @@
+AOS.init();
+
+
 let sidebarElement = document.querySelector("[data-layout='sidebar']");
 let sidebarToggle = document.querySelectorAll("[data-layout='toggle']");
 let floatingLabelInput = document.querySelectorAll(".floating-label");
