@@ -1,5 +1,6 @@
 <?php include("includes/header.php"); ?>
 <?php include("includes/admin-header.php"); ?>
+<?php include("includes/data.php"); ?>
 <nav aria-label="breadcrumb" class="tw-flex-none">
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -8,167 +9,35 @@
     </ol>
 </nav>
 <div
-    class="tw-grid tw-grid-cols-1 sm:tw-grid-cols-2 md:tw-grid-cols-2 lg:tw-grid-cols-3 xl:tw-grid-cols-4 2xl:tw-grid-cols-5 tw-gap-[20px] lg:tw-gap-[30px]">
-    <div class="tw-bg-white tw-rounded-[10px] tw-p-[10px] tw-shadow tw-flex tw-flex-col tw-gap-[10px]">
-        <img src="assets/images/e1.jpeg"
+    class="tw-grid tw-grid-cols-1 sm:tw-grid-cols-2 md:tw-grid-cols-2 lg:tw-grid-cols-3 xl:tw-grid-cols-3 2xl:tw-grid-cols-3 tw-gap-[20px] lg:tw-gap-[30px]">
+    
+    <?php foreach ($tests as $test) { ?>
+    <div class="tw-bg-white tw-rounded-[10px] tw-p-[10px] tw-shadow tw-flex tw-flex-col tw-gap-[10px] tw-cursor-pointer tw-transition-all tw-duration-300 tw-ease-out hover:tw-scale-[1.05] hover:tw-shadow-lg">
+        <img src="<?= $test['image'] ?>"
             class="tw-max-w-full tw-rounded-[10px] tw-border tw-border-solid tw-border-gray-300" />
         <div class="tw-flex tw-flex-col">
-            <div class="tw-font-bold">Number Series</div>
-            <div class="tw-text-[13px]">Ratio & Proportion - Test 1</div>
-            <div class="tw-text-[12px] tw-text-gray-400 [&_span]:tw-mx-[3px]">10 Questions <span>•</span> 05 Mins
-                <span>•</span> Logical Reasoning</div>
-        </div>
-        <div
-            class="tw-border-2 tw-border-dashed tw-border-gray-300 tw-rounded-[5px] tw-bg-gray-100 tw-px-[5px] tw-h-[30px] tw-flex tw-items-center">
-            <span class="tw-font-bold">Test Code : 21846</span>
-            <i class="fa fa-copy tw-ml-auto"></i>
-        </div>
-        <a href="#" class="btn btn-primary tw-self-start">Start Test</a>
+            <div class="tw-font-bold tw-text-[20px] tw-text-center"><?= $test['topic'] ?></div>
+            <div class="tw-text-center tw-text-[16px] tw-text-gray-500"><?= $test['test_name'] ?></div>
+
+            <div class="tw-flex tw-justify-center tw-my-[10px]">
+                <div class="tw-flex tw-flex-col tw-px-[20px] tw-border-0 tw-border-solid tw-border-r tw-border-gray-300">
+                    <div class="tw-font-bold tw-text-[18px] tw-text-center"><?= $test['no_of_questions'] ?></div>
+                    <div class="tw-text-[14px] tw-text-gray-400 tw-text-center">Questions</div>
+
+                </div>
+                <div class="tw-flex tw-flex-col tw-px-[20px]">
+                    <div class="tw-font-bold tw-text-[18px] tw-text-center"><?= $test['duration'] ?> Mins</div>
+                    <div class="tw-text-[14px] tw-text-gray-400 tw-text-center">Duration</div>
+
+                </div>
+             
+            </div>
+
+ 
+        </div> 
     </div>
-    <div class="tw-bg-white tw-rounded-[10px] tw-p-[10px] tw-shadow tw-flex tw-flex-col tw-gap-[10px]">
-        <img src="assets/images/e2.jpeg"
-            class="tw-max-w-full tw-rounded-[10px] tw-border tw-border-solid tw-border-gray-300" />
-        <div class="tw-flex tw-flex-col">
-            <div class="tw-font-bold">Analytical Puzzles</div>
-            <div class="tw-text-[13px]">Ratio & Proportion - Test 1</div>
-            <div class="tw-text-[12px] tw-text-gray-400 [&_span]:tw-mx-[3px]">10 Questions <span>•</span> 05 Mins
-                <span>•</span> Logical Reasoning</div>
-        </div>
-        <div
-            class="tw-border-2 tw-border-dashed tw-border-gray-300 tw-rounded-[5px] tw-bg-gray-100 tw-px-[5px] tw-h-[30px] tw-flex tw-items-center">
-            <span class="tw-font-bold">Test Code : 21846</span>
-            <i class="fa fa-copy tw-ml-auto"></i>
-        </div>
-        <a href="#" class="btn btn-primary tw-self-start">Start Test</a>
-    </div>
-    <div class="tw-bg-white tw-rounded-[10px] tw-p-[10px] tw-shadow tw-flex tw-flex-col tw-gap-[10px]">
-        <img src="assets/images/e3.jpeg"
-            class="tw-max-w-full tw-rounded-[10px] tw-border tw-border-solid tw-border-gray-300" />
-        <div class="tw-flex tw-flex-col">
-            <div class="tw-font-bold">Ratio & Proportions</div>
-            <div class="tw-text-[13px]">Ratio & Proportion - Test 1</div>
-            <div class="tw-text-[12px] tw-text-gray-400 [&_span]:tw-mx-[3px]">10 Questions <span>•</span> 05 Mins
-                <span>•</span> Logical Reasoning</div>
-        </div>
-        <div
-            class="tw-border-2 tw-border-dashed tw-border-gray-300 tw-rounded-[5px] tw-bg-gray-100 tw-px-[5px] tw-h-[30px] tw-flex tw-items-center">
-            <span class="tw-font-bold">Test Code : 21846</span>
-            <i class="fa fa-copy tw-ml-auto"></i>
-        </div>
-        <a href="#" class="btn btn-primary tw-self-start">Start Test</a>
-    </div>
-    <div class="tw-bg-white tw-rounded-[10px] tw-p-[10px] tw-shadow tw-flex tw-flex-col tw-gap-[10px]">
-        <img src="assets/images/e1.jpeg"
-            class="tw-max-w-full tw-rounded-[10px] tw-border tw-border-solid tw-border-gray-300" />
-        <div class="tw-flex tw-flex-col">
-            <div class="tw-font-bold">Number Series</div>
-            <div class="tw-text-[13px]">Ratio & Proportion - Test 1</div>
-            <div class="tw-text-[12px] tw-text-gray-400 [&_span]:tw-mx-[3px]">10 Questions <span>•</span> 05 Mins
-                <span>•</span> Logical Reasoning</div>
-        </div>
-        <div
-            class="tw-border-2 tw-border-dashed tw-border-gray-300 tw-rounded-[5px] tw-bg-gray-100 tw-px-[5px] tw-h-[30px] tw-flex tw-items-center">
-            <span class="tw-font-bold">Test Code : 21846</span>
-            <i class="fa fa-copy tw-ml-auto"></i>
-        </div>
-        <a href="#" class="btn btn-primary tw-self-start">Start Test</a>
-    </div>
-    <div class="tw-bg-white tw-rounded-[10px] tw-p-[10px] tw-shadow tw-flex tw-flex-col tw-gap-[10px]">
-        <img src="assets/images/e2.jpeg"
-            class="tw-max-w-full tw-rounded-[10px] tw-border tw-border-solid tw-border-gray-300" />
-        <div class="tw-flex tw-flex-col">
-            <div class="tw-font-bold">Analytical Puzzles</div>
-            <div class="tw-text-[13px]">Ratio & Proportion - Test 1</div>
-            <div class="tw-text-[12px] tw-text-gray-400 [&_span]:tw-mx-[3px]">10 Questions <span>•</span> 05 Mins
-                <span>•</span> Logical Reasoning</div>
-        </div>
-        <div
-            class="tw-border-2 tw-border-dashed tw-border-gray-300 tw-rounded-[5px] tw-bg-gray-100 tw-px-[5px] tw-h-[30px] tw-flex tw-items-center">
-            <span class="tw-font-bold">Test Code : 21846</span>
-            <i class="fa fa-copy tw-ml-auto"></i>
-        </div>
-        <a href="#" class="btn btn-primary tw-self-start">Start Test</a>
-    </div>
-    <div class="tw-bg-white tw-rounded-[10px] tw-p-[10px] tw-shadow tw-flex tw-flex-col tw-gap-[10px]">
-        <img src="assets/images/e3.jpeg"
-            class="tw-max-w-full tw-rounded-[10px] tw-border tw-border-solid tw-border-gray-300" />
-        <div class="tw-flex tw-flex-col">
-            <div class="tw-font-bold">Ratio & Proportions</div>
-            <div class="tw-text-[13px]">Ratio & Proportion - Test 1</div>
-            <div class="tw-text-[12px] tw-text-gray-400 [&_span]:tw-mx-[3px]">10 Questions <span>•</span> 05 Mins
-                <span>•</span> Logical Reasoning</div>
-        </div>
-        <div
-            class="tw-border-2 tw-border-dashed tw-border-gray-300 tw-rounded-[5px] tw-bg-gray-100 tw-px-[5px] tw-h-[30px] tw-flex tw-items-center">
-            <span class="tw-font-bold">Test Code : 21846</span>
-            <i class="fa fa-copy tw-ml-auto"></i>
-        </div>
-        <a href="#" class="btn btn-primary tw-self-start">Start Test</a>
-    </div>
-    <div class="tw-bg-white tw-rounded-[10px] tw-p-[10px] tw-shadow tw-flex tw-flex-col tw-gap-[10px]">
-        <img src="assets/images/e1.jpeg"
-            class="tw-max-w-full tw-rounded-[10px] tw-border tw-border-solid tw-border-gray-300" />
-        <div class="tw-flex tw-flex-col">
-            <div class="tw-font-bold">Number Series</div>
-            <div class="tw-text-[13px]">Ratio & Proportion - Test 1</div>
-            <div class="tw-text-[12px] tw-text-gray-400 [&_span]:tw-mx-[3px]">10 Questions <span>•</span> 05 Mins
-                <span>•</span> Logical Reasoning</div>
-        </div>
-        <div
-            class="tw-border-2 tw-border-dashed tw-border-gray-300 tw-rounded-[5px] tw-bg-gray-100 tw-px-[5px] tw-h-[30px] tw-flex tw-items-center">
-            <span class="tw-font-bold">Test Code : 21846</span>
-            <i class="fa fa-copy tw-ml-auto"></i>
-        </div>
-        <a href="#" class="btn btn-primary tw-self-start">Start Test</a>
-    </div>
-    <div class="tw-bg-white tw-rounded-[10px] tw-p-[10px] tw-shadow tw-flex tw-flex-col tw-gap-[10px]">
-        <img src="assets/images/e2.jpeg"
-            class="tw-max-w-full tw-rounded-[10px] tw-border tw-border-solid tw-border-gray-300" />
-        <div class="tw-flex tw-flex-col">
-            <div class="tw-font-bold">Analytical Puzzles</div>
-            <div class="tw-text-[13px]">Ratio & Proportion - Test 1</div>
-            <div class="tw-text-[12px] tw-text-gray-400 [&_span]:tw-mx-[3px]">10 Questions <span>•</span> 05 Mins
-                <span>•</span> Logical Reasoning</div>
-        </div>
-        <div
-            class="tw-border-2 tw-border-dashed tw-border-gray-300 tw-rounded-[5px] tw-bg-gray-100 tw-px-[5px] tw-h-[30px] tw-flex tw-items-center">
-            <span class="tw-font-bold">Test Code : 21846</span>
-            <i class="fa fa-copy tw-ml-auto"></i>
-        </div>
-        <a href="#" class="btn btn-primary tw-self-start">Start Test</a>
-    </div>
-    <div class="tw-bg-white tw-rounded-[10px] tw-p-[10px] tw-shadow tw-flex tw-flex-col tw-gap-[10px]">
-        <img src="assets/images/e3.jpeg"
-            class="tw-max-w-full tw-rounded-[10px] tw-border tw-border-solid tw-border-gray-300" />
-        <div class="tw-flex tw-flex-col">
-            <div class="tw-font-bold">Ratio & Proportions</div>
-            <div class="tw-text-[13px]">Ratio & Proportion - Test 1</div>
-            <div class="tw-text-[12px] tw-text-gray-400 [&_span]:tw-mx-[3px]">10 Questions <span>•</span> 05 Mins
-                <span>•</span> Logical Reasoning</div>
-        </div>
-        <div
-            class="tw-border-2 tw-border-dashed tw-border-gray-300 tw-rounded-[5px] tw-bg-gray-100 tw-px-[5px] tw-h-[30px] tw-flex tw-items-center">
-            <span class="tw-font-bold">Test Code : 21846</span>
-            <i class="fa fa-copy tw-ml-auto"></i>
-        </div>
-        <a href="#" class="btn btn-primary tw-self-start">Start Test</a>
-    </div>
-    <div class="tw-bg-white tw-rounded-[10px] tw-p-[10px] tw-shadow tw-flex tw-flex-col tw-gap-[10px]">
-        <img src="assets/images/e1.jpeg"
-            class="tw-max-w-full tw-rounded-[10px] tw-border tw-border-solid tw-border-gray-300" />
-        <div class="tw-flex tw-flex-col">
-            <div class="tw-font-bold">Number Series</div>
-            <div class="tw-text-[13px]">Ratio & Proportion - Test 1</div>
-            <div class="tw-text-[12px] tw-text-gray-400 [&_span]:tw-mx-[3px]">10 Questions <span>•</span> 05 Mins
-                <span>•</span> Logical Reasoning</div>
-        </div>
-        <div
-            class="tw-border-2 tw-border-dashed tw-border-gray-300 tw-rounded-[5px] tw-bg-gray-100 tw-px-[5px] tw-h-[30px] tw-flex tw-items-center">
-            <span class="tw-font-bold">Test Code : 21846</span>
-            <i class="fa fa-copy tw-ml-auto"></i>
-        </div>
-        <a href="#" class="btn btn-primary tw-self-start">Start Test</a>
-    </div>
+    <?php } ?>
+    
 
 </div>
 <?php include("includes/admin-footer.php"); ?>

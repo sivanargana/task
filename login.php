@@ -35,8 +35,7 @@
 
 
  
-
-<!-- Modal -->
+ 
 <div class="modal fade" id="otpmodal">
   <div class="modal-dialog">
     <div class="modal-content">
